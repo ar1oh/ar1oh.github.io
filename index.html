@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Что такое JavaScript?</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#"><img src="/Web/Practice_1/icons/js_icon.png" alt=""></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a id="menu" href="#">МЕНЮ</a></li>
+                    <li><a id="usernameOutput" href="#">ГОСТЬ</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>JavaScript</h1>
+            <p>Кратко об одном из самых популярных в мире языков программирования</p>
+        </div>
+    </header>
+    <main>
+        <h2>Что такое JavaScript?</h2>
+        <p><b>JavaScript</b> – это мультипарадигменный язык программирования, который обычно применяется в качестве встраиваемого инструмента
+        для программного доступа к различным объектам приложений. С точки зрения веб-разработки, без знаний этой технологии невозможно
+        заниматься созданием современных интерактивных сайтов. Язык JS – это то, что «оживляет» разметку страниц (HTML) и пользовательский
+        функционал (CMS) сайтов. С помощью этого языка реализуется возможность реакции страницы или отдельных ее элементов на действия 
+        посетителя. Сегодня JavaScript является базовым языком программирования для браузеров. Он полностью совместим с операционными 
+        системами Windows, Linux, Mac OS, а также всеми популярными мобильными платформами.</p>
+
+        <h2>Как работает технология?</h2>
+        
+        <p>Теперь нужно разобраться с тем, что такое JavaScript с точки зрения функционирования. Все пользовательские действия в окне 
+        браузера создают события, а программирование на JS позволяет обрабатывать их определенным образом.</p> 
+
+        <p>Стандартный алгоритм работы выглядит следующим образом:</p>
+
+        <ol>
+            <b><li>Пользователь выполнил определенное действие.</li></b>
+            <b><li>Браузер определил событие.</li></b>
+            <b><li>Активируется JS-код.</li></b>
+            <b><li>На странице происходит заданное изменение.</li></b>
+        </ol>
+
+        <p>Задача программиста заключается в том, чтобы создать обработчики для всех событий, на которые должен реагировать сайт при
+        взаимодействии с пользователем.</p>
+        
+        <p>Для наглядности приведем два примера типичных сценариев.</p>
+        
+        <ol>
+            <b><li>Пользователь нажимает левую кнопку мыши.</li></b>
+            <b><li>Браузер фиксирует событие onclick.</li></b>
+            <b><li>Активируется функция changePhoto.</li></b>
+            <b><li>В окне просмотра фотографий изменяется изображение.</li></b>
+        </ol>
+
+        <p>Если обработчик не внедрен в код, то алгоритм работы будет примерно следующим:</p>
+
+        <ol>
+            <b><li>Пользователь совершает клик.</li></b>
+            <b><li>Браузер фиксирует событие onkeydown.</li></b>
+            <b><li>Для его обработки нет специального JS-кода.</li></b>
+            <b><li>После клика ничего не происходит.</li></b>
+        </ol>
+        
+        <p>Нужно отметить, что программирование не всегда привязывается к активным действиям пользователя. К примеру, JavaScript-код
+        может срабатывать при полной загрузке страницы или после определенного времени нахождения на сайте. Эти возможности активно
+        используются для создания всплывающих Pop-up элементов и чатов.</p>
+
+        <h2>Стоит ли новичкам осваивать JS</h2>
+        
+        <p>Язык программирования JavaScript хорошо подходит для освоения с нуля. Он не перегружен техническими моментами, но уже 
+        содержит все базовые компоненты:</p>
+
+        <ul>
+            <b><li>структуры данных;</li></b>
+            <b><li>алгоритмы;</li></b>
+            <b><li>объектно-ориентированную модель.</li></b>
+        </ul>
+
+        <p>Важным плюсом JS является и то, что он имеет синтаксическое сходство с Java, С++, C# и PHP. Эти языки программирования тоже
+        активно используются в своих нишах, поэтому начинающему веб-разработчику будет полезно познакомиться с ними.</p>
+
+        <h2>Чем ограничен JavaScript?</h2>
+
+        <p>В чистом виде, то есть без специальных надстроек язык JS может функционировать только в рамках браузера. Но даже здесь есть
+        ограничения, обусловленные требованиями безопасности. К примеру, возможности JavaScript позволяют закрыть только ту вкладку,
+        которая была им создана. В общем, этот язык программирования создан для браузеров и интернета, а за их пределами он и не должен
+        был использоваться.</p>
+
+    </main>
+    <form id="first-form">
+        <div class="form-container">
+            <h2>Демонстрация работы языка</h2>
+            <div class="form-section">
+                <p>Введите ваше имя:</p>  
+                <input id="name" type="text" placeholder="Имя" maxlength="30">
+                <div class="input-margin">
+                    <a id="setNameButton" href="" class="hero-btn">Применить</a>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <p>Введите основание и высоту треугольника, чтобы узнать его площадь: </p> 
+                <input id="base" type="text" placeholder="Основание">
+                <div class="input-margin">
+                    <input id="height" type="text" placeholder="Высота">
+                </div>
+                <div class="input-margin">
+                    <input id="squareCalcButton" type="button" value="Посчитать">
+                </div>
+                <div class="input-margin">
+                    <input id="squareOutput" type="text" readonly>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <p>Введите 2 строки, чтобы узнать одинаковы ли они: </p>
+                <input id="firstString" type="text">
+                <div class="input-margin">
+                    <input id="secondString" type="text">
+                </div>
+                <div class="input-margin">
+                    <input id="compare" type="button" value="Сравнить">
+                </div>
+                <div class="input-margin">
+                    <input id="getCompare" type="text" readonly>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <p>Введите 5 элементов массива, чтобы узнать его максимальное и минимальное значения: </p>
+                <div>
+                    <input id="firstElement" type="number">
+                </div>
+                <div class="input-margin">
+                    <input id="secondElement" type="number">
+                </div>
+                <div class="input-margin">    
+                    <input id="thirdElement" type="number">
+                </div>
+                <div class="input-margin">
+                    <input id="fourthElement" type="number">
+                </div>
+                <div class="input-margin">
+                    <input id="fifthElement" type="number">
+                </div>
+                <div class="input-margin">
+                    <input id="arrayButton" type="button" value="Посчитать">
+                </div>
+            </div>
+
+            <div class="form-section">
+                <p>Полностью рабочий таймер: </p>
+                <div class="timer">
+                    <div class="timer__items">
+                        <div class="timer__item timer__days">00</div>
+                        <div class="timer__item timer__hours">00</div>
+                        <div class="timer__item timer__minutes">00</div>
+                        <div class="timer__item timer__seconds">00</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="input-margin">
+                        <input id="startCountingButton" type="button" value="Старт">
+                    </div>
+                    <div class="input-margin">
+                        <input id="stopCountingButton" type="button" value="Стоп">
+                    </div>
+                </div>
+                <div class="input-margin">
+                    <input id="startFinishDifferenceButton" type="button" value="Разница (Старт - Финиш)">
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <form id="second-form">
+        <div class="form-container">
+            <h2>Тест</h2>
+            <div class="wrapper">
+                <iframe src="quiz.html" width="100%" height="720" class="quiz-frame"></iframe>
+            </div>
+        </div>
+    </form>
+
+    <div class="user-screen">
+        <input id="userScreen" type="button" value="Экран Пользователя">
+    </div>
+
+    <div class="md-modal md-effect-12">
+        <div class="md-content">
+            <h2 id="current_date_time_block">Modal Dialog</h2>
+            <div>
+                <div id="usernameScreenOutput">Гость</div>
+                <input id="md-close" type="button" value="Закрыть">
+            </div>
+        </div>
+    </div>
+    
+    <div class="md-overlay"></div>
+
+    <footer>
+    </footer> 
+    <script src="scripts/index.js"></script>  
+</body>
+</html>
